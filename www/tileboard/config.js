@@ -13,8 +13,8 @@ var CONFIG = {
    entitySize: ENTITY_SIZES.NORMAL, //SMALL, BIG are available
    tileSize: 150,
    tileMargin: 6,
-   serverUrl: "http://localhost:8123",
-   wsUrl: "ws://localhost:8123/api/websocket",
+   serverUrl: "https://yedgar.duckdns.org",
+   wsUrl: "ws://yedgar.duckdns.org/api/websocket",
    authToken: null, // optional: make an long live token and put it here
    //googleApiKey: "XXXXXXXXXX", // Required if you are using Google Maps for device tracker
    debug: false, // Prints entities and state change info to the console.
