@@ -14,7 +14,7 @@ var CONFIG = {
    tileSize: 150,
    tileMargin: 6,
    serverUrl: "https://yedgar.duckdns.com",
-   wsUrl: "ws://yedgar.duckdns.org/api/websocket",
+   wsUrl: "wss://yedgar.duckdns.org/api/websocket",
    authToken: null, // optional: make an long live token and put it here
    //googleApiKey: "XXXXXXXXXX", // Required if you are using Google Maps for device tracker
    debug: false, // Prints entities and state change info to the console.
