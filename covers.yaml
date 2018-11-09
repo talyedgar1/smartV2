@@ -1,0 +1,25 @@
+- platform: group
+  name: kidsCoverGroup
+  entities:
+    - cover.kids_roller_left_21
+    - cover.kids_roller_right_20
+
+- platform: group
+  name: parentsCoverGroup
+  entities:
+    - cover.fibaro_system_fgrm222_roller_shutter_controller_2_level
+    - cover.fibaro_system_fgrm222_roller_shutter_controller_2_level_2
+
+- platform: group
+  name: kitchenCoverGroup
+  entities:
+    - cover.kitchen_roller_left_14
+    - cover.kitchen_roller_right_15
+
+- platform: group
+  name: livingRoomCoverGroup
+  entities:    
+    - cover.living_room_roller_middle_16
+    - cover.living_room_roller_left_17
+    - cover.living_room_big_roller_18
+    - cover.living_room_roller_right_19
