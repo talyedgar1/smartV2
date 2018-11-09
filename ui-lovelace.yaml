@@ -9,7 +9,19 @@ views:
           cards:
             - type: entity-button
               entity: scene.first_floor_a_bit
+              tap_action: call-service
             - type: entity-button
               entity: scene.first_floor_50
+              tap_action: call-service
             - type: entity-button
               entity: scene.close_first_floor
+              tap_action: call-service
+            - type: entity-button
+              entity: scene.first_floor_a_bit
+              tap_action: call-service
+            - type: entity-button
+              entity: scene.first_floor_50
+              tap_action: call-service
+            - type: entity-button
+              entity: scene.close_first_floor
+              tap_action: call-service
