@@ -6,7 +6,17 @@ views:
     # Makes the first card fill the view
     cards:
         # The markdown card will render markdown text.
-      - type: markdown
+        - type: markdown
         title: Lovelace
         content: >
           Welcome to your **Lovelace UI**.
+        - type: vertical-stack
+    cards:
+        - type: horizontal-stack
+          cards:
+            - type: entity-button
+              entity: scene.first_floor_a_bit
+            - type: entity-button
+              entity: scene.first_floor_50
+            - type: entity-button
+              entity: scene.close_first_floor
