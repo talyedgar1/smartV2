@@ -1,0 +1,7 @@
+- platform: yr
+
+- platform: mqtt
+  name: Garden Humidity
+  state_topic: moisture
+  unit_of_measurement: 'Numeric'
+  value_template: '{{ float(value_json.humidity) }}'

@@ -56,11 +56,6 @@ map:
 # Track the sun
 sun:
 
-# Sensors
-sensor:
-  # Weather prediction
-  - platform: yr
-
 # Text to speech
 tts:
   - platform: google
@@ -70,8 +65,15 @@ cloud:
 
 vera:
   vera_controller_url: http://10.100.102.200:3480
+  
+mqtt:
+  broker: m23.cloudmqtt.com
+  port: 16080
+  username: !secret mqtt_user
+  password: !secret mqtt_password
 
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 cover: !include covers.yaml
+sensor: !include sensors.yaml
