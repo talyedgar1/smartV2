@@ -6,6 +6,7 @@ views:
     # Makes the first card fill the view
     cards:
         - type: horizontal-stack
+          id: 123
           cards:
             - type: entity-button
               entity: scene.first_floor_a_bit
