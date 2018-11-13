@@ -124,4 +124,5 @@ views:
         state_image:
           "on": http://farm7.static.flickr.com/6220/6220100616_a877f41a66_b.jpg
         title: Livingroom lights
+        tap_action: toggle
         
