@@ -72,6 +72,19 @@ mqtt:
   username: !secret mqtt_user
   password: !secret mqtt_password
 
+#telegram  
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_token
+    allowed_chat_ids:
+      - !secret telegram_chat
+
+notify:
+  - name: bot_bot
+    platform: telegram
+    chat_id: !secret telegram_chat
+#end telegram
+    
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
