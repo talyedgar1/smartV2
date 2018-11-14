@@ -91,3 +91,4 @@ script: !include scripts.yaml
 cover: !include covers.yaml
 sensor: !include sensors.yaml
 scene: !include scenes.yaml
+input_boolean: !include input_boolean.yaml
