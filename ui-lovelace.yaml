@@ -119,23 +119,23 @@ views:
               "on": /local/aircon-on.png
               "off": /local/aircon-off.png
       - type: horizontal-stack
-          cards:
-            - type: entity-button
-              entity: scene.first_floor_a_bit
-              tap_action: scene.turn_on
-            - type: entity-button
-              entity: scene.first_floor_50
-              tap_action: scene.turn_on
-            - type: entity-button
-              entity: scene.close_first_floor
-              tap_action: scene.turn_on
-            - type: entity-button
-              entity: scene.first_floor_a_bit
-              tap_action: scene.turn_on
-            - type: entity-button
-              entity: scene.first_floor_50
-              tap_action: scene.turn_on
-            - type: entity-button
-              entity: scene.close_first_floor
-              tap_action: scene.turn_on
+        elements:
+          - type: entity-button
+            entity: scene.first_floor_a_bit
+            tap_action: scene.turn_on
+          - type: entity-button
+            entity: scene.first_floor_50
+            tap_action: scene.turn_on
+          - type: entity-button
+            entity: scene.close_first_floor
+            tap_action: scene.turn_on
+          - type: entity-button
+            entity: scene.first_floor_a_bit
+            tap_action: scene.turn_on
+          - type: entity-button
+            entity: scene.first_floor_50
+            tap_action: scene.turn_on
+          - type: entity-button
+            entity: scene.close_first_floor
+            tap_action: scene.turn_on
         
