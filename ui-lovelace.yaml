@@ -119,7 +119,7 @@ views:
               "on": /local/aircon-on.png
               "off": /local/aircon-off.png
       - type: horizontal-stack
-        elements:
+        cards:
           - type: entity-button
             entity: scene.first_floor_a_bit
             tap_action: scene.turn_on
