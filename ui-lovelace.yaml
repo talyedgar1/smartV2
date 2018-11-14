@@ -118,11 +118,24 @@ views:
             state_image:
               "on": /local/aircon-on.png
               "off": /local/aircon-off.png
-      - type: picture-entity
-        entity: switch.living_room_ceiling_light_40
-        image: http://farm7.static.flickr.com/6153/6220100622_88e64ec5d8_b.jpg
-        state_image:
-          "on": http://farm7.static.flickr.com/6220/6220100616_a877f41a66_b.jpg
-        title: Livingroom lights
-        tap_action: toggle
+      - type: horizontal-stack
+          cards:
+            - type: entity-button
+              entity: scene.first_floor_a_bit
+              tap_action: scene.turn_on
+            - type: entity-button
+              entity: scene.first_floor_50
+              tap_action: scene.turn_on
+            - type: entity-button
+              entity: scene.close_first_floor
+              tap_action: scene.turn_on
+            - type: entity-button
+              entity: scene.first_floor_a_bit
+              tap_action: scene.turn_on
+            - type: entity-button
+              entity: scene.first_floor_50
+              tap_action: scene.turn_on
+            - type: entity-button
+              entity: scene.close_first_floor
+              tap_action: scene.turn_on
         
