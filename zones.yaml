@@ -1,0 +1,41 @@
+- name: Home
+  latitude: !secret home_lat
+  longitude: !secret home_lon
+  radius: 1000
+  icon: mdi:home-variant
+
+- name: Errands
+  latitude: 32.276199031143
+  longitude: 34.919878124576
+  radius: 300
+  icon: mdi:cart
+
+- name: Work
+  latitude: 32.281778
+  longitude: 34.863036
+  radius: 300
+  icon: mdi:face
+
+- name: Arad
+  latitude: 31.259639
+  longitude: 35.216699
+  radius: 2000
+  icon: mdi:beach
+
+- name: Hila and Guy
+  latitude: 32.430127597375
+  longitude: 34.94698692589
+  radius: 500
+  icon: mdi:pig
+
+- name: Sailing
+  latitude: 32.168556
+  longitude: 34.765806
+  radius: 5000
+  icon: mdi:ferry
+  
+- name: 'upstairs'
+  latitude: !secret home_lat
+  longitude: !secret home_lon
+  radius: 3
+  passive: true
