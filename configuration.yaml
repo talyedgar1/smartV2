@@ -83,17 +83,17 @@ notify:
     chat_id: !secret telegram_chat
 #end telegram
 
-- platform: command_line
-  switches:
-    test1:
-      command_on: "pwd"
-      command_off: "pwd"
-    test2:
-      command_on: "pwd"
-      command_off: "pwd"
-
 
 switch:
+  - platform: command_line
+    switches:
+      test1:
+        command_on: "pwd"
+        command_off: "pwd"
+      test2:
+        command_on: "pwd"
+        command_off: "pwd"
+
   - platform: broadlink
     host: 10.100.102.20
     mac: '34:ea:34:42:aa:3b'
