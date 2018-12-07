@@ -11,6 +11,7 @@ views:
           - switch.living_room_air_con
           - switch.parents_air_con
           - switch.kids_air_con
+          - switch.play_room_air_con
     # View tab title.
   - title: Example
     # panel: true
