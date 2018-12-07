@@ -22,6 +22,8 @@ frontend:
 # Enables configuration UI
 config:
 
+ios:
+
 http:
   api_password: !secret http_password
   base_url: https://yedgar.duckdns.org:8123
