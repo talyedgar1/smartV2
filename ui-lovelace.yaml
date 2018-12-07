@@ -4,13 +4,16 @@ views:
     cards:
       - type: entities
         # Title of the entities card
-        title: Example
+        title: מזגנים
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
         entities:
           - switch.living_room_air_con
+            name: סלון
           - switch.parents_air_con
+            name: הורים
           - switch.kids_air_con
+            name: ילדים
     # View tab title.
   - title: Example
     # panel: true
