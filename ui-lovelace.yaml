@@ -12,6 +12,17 @@ views:
           - switch.parents_air_con
           - switch.kids_air_con
           - switch.play_room_air_con
+          
+      - type: entities
+        # Title of the entities card
+        title: תריסים
+        # The entities here will be shown in the same order as specified.
+        # Each entry is an entity ID or a map with extra options.
+        entities:
+          - cover.livingroomcovergroup
+          - cover.kitchencovergroup
+          - cover.parentscovergroup
+          - cover.kidscovergroup
     # View tab title.
   - title: Example
     # panel: true
