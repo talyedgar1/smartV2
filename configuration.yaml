@@ -87,7 +87,7 @@ notify:
 switch:
   - platform: command_line
     switches:
-      test1:
+      living_room_aircon_protected:
         command_on: "pwd"
         command_off: "pwd"
       test2:
