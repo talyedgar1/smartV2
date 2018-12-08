@@ -5,3 +5,117 @@
   state_topic: moisture
   unit_of_measurement: 'Numeric'
   value_template: '{{ float(value_json.humidity) }}'
+
+#- platform: mqtt
+#  name: Kids Room Temp
+#  state_topic: kidsRoom
+#  unit_of_measurement: '°C'
+#  value_template: '{{ float(value_json.temp ) }}'
+
+#- platform: mqtt
+#  name: Kids Room Humidity
+#  state_topic: kidsRoom
+#  unit_of_measurement: '%'
+#  value_template: '{{ float(value_json.humidity ) }}'
+  
+  
+- platform: mqtt
+  name: Boiler Temprature 
+  state_topic: boilerTemp
+  unit_of_measurement: 'Numeric'
+  value_template: '{{ float(value_json.temp) }}'
+  
+- platform: mqtt
+  name: temp1
+  state_topic: device1
+  value_template: '{{ float(value_json.svalue).split(";")[0] }}'
+  
+- platform: mqtt
+  name: hum1
+  state_topic: device1
+  value_template: '{{ float(value_json.svalue).split(";")[1] }}'
+  
+#- platform: mqtt
+#  name: Parents Room Temp
+#  state_topic: parentsRoom
+#  unit_of_measurement: '°C'
+#  value_template: '{{ float(value_json.temp ) }}'
+
+#- platform: mqtt
+#  name: Parents Room Humidity
+#  state_topic: parentsRoom
+#  unit_of_measurement: '%'
+#  value_template: '{{ float(value_json.humidity ) }}'
+
+
+# Tracking entity to entity
+#- platform: google_travel_time
+#  name: phone_to_home
+#  api_key: AIzaSyC_cxT-E1rFQzWYDnkIKFR_GmzLPuEMgjw
+#  origin: device_tracker.tal_phone_p
+#  destination: zone.home
+  
+# - platform: history_stats
+#   name: bushes
+#   entity_id: switch.wenzhou_tkb_control_system_unknown_type0001_id0004_switch_3
+#   state: 'on'
+#   type: time
+#   start: '{{ now().replace(day=1).replace(hour=0).replace(minute=0).replace(second=0)}}'
+#   end: '{{ now() }}'
+  
+# - platform: history_stats
+#   name: trees
+#   entity_id: switch.wenzhou_tkb_control_system_unknown_type0001_id0004_switch_2
+#   state: 'on'
+#   type: time
+#   start: '{{ now().replace(day=1).replace(hour=0).replace(minute=0).replace(second=0)}}'
+#   end: '{{ now() }}'
+  
+
+# - platform: template
+#   sensors:
+#     water_cost:
+#         friendly_name: "Garden Water Cost"
+#         value_template: >- 
+#             {% set trees_litters = 48 %}
+#             {% set bushes_litters = 52 %}
+#             {% set costPerLitter = 0.009  %}
+#             {{ (states('sensor.bushes')|float *bushes_litters + states('sensor.trees')|float *trees_litters) *costPerLitter }}
+#         unit_of_measurement: '₪'
+
+# - platform: filter
+#   name: Realistic Humidity
+#   entity_id: sensor.garden_humidity
+#   filters:
+#     - filter: lowpass
+#       time_constant: 20
+#       precision: 2
+      
+- platform: yr
+  name: Weather
+  #forecast: 24
+  monitored_conditions:
+    - windSpeed
+    - windDirection
+
+- platform: template
+  sensors:
+    wind_speed:
+        friendly_name: "wind speed"
+        value_template: >- 
+            {{ (states.sensor.weather_wind_speed.state | float * 1.944) | round(2) }}
+        unit_of_measurement: 'Kn'
+
+
+- platform: waze_travel_time
+  name: home->work
+  origin: Efroni Street, Tel Mond, Israel
+  destination: Sapir St 3, Herzliya, Israel
+  region: 'IL'
+  
+- platform: waze_travel_time
+  name: work->home
+  origin: Sapir St 3, Herzliya, Israel
+  destination: Efroni Street, Tel Mond, Israel
+  region: 'IL'
+
