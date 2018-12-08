@@ -1,11 +1,15 @@
   - platform: command_line
     switches:
-      living_room_aircon_protected:
+      test1:
         command_on: "pwd"
         command_off: "pwd"
       test2:
         command_on: "pwd"
         command_off: "pwd"
+      living_room_aircon_protected:
+        command_on: "pwd"
+        command_off: "pwd"
+      
 
   - platform: broadlink
     host: 10.100.102.20
