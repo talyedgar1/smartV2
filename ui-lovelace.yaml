@@ -29,7 +29,7 @@ views:
       - type: entity-button
         entity: light.living_room
       - type: entity-button
-        entity: light.office
+        entity: input_number.aircon_number
       - type: entity-button
         entity: light.bedroom
    
