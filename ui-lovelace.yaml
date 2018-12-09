@@ -26,12 +26,11 @@ views:
   - title: second
     type: horizontal-stack
     cards:
-      - type: entity-button
-        entity: sensor.lr_ac_temp_sensor
-      - type: entity-button
-        entity: input_number.aircon_number
-      - type: entity-button
-        entity: light.bedroom
+      - type: entities
+        title: Entities card sample
+        show_header_toggle: true
+        entities:
+          - sensor.lr_ac_temp_sensor
    
     # View tab title.
   - title: Example
