@@ -118,4 +118,9 @@
   origin: Sapir St 3, Herzliya, Israel
   destination: Efroni Street, Tel Mond, Israel
   region: 'IL'
+  
+- platform: template
+  sensors:
+    lr_ac_temp_sensor:
+      value_template: "{{ states.input_number.aircon_number.state }}"
 
