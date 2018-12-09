@@ -83,6 +83,14 @@ notify:
     chat_id: !secret telegram_chat
 #end telegram
 
+input_number:
+  aircon_number:
+    name: aircon_number
+    initial: 27
+    min: 24
+    max: 30
+    step: 1
+
 
 switch: !include switches.yaml
 group: !include groups.yaml
