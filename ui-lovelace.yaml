@@ -22,7 +22,17 @@ views:
           - cover.livingroomcovergroup
           - cover.kitchencovergroup
           - cover.parentscovergroup
-          - cover.kidscovergroup
+          - cover.kidscovergroup     
+  - title: second
+    type: horizontal-stack
+    cards:
+      - type: entity-button
+        entity: light.living_room
+      - type: entity-button
+        entity: light.office
+      - type: entity-button
+        entity: light.bedroom
+   
     # View tab title.
   - title: Example
     # panel: true
