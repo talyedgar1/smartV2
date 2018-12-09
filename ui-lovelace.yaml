@@ -31,6 +31,7 @@ views:
         show_header_toggle: true
         entities:
           - sensor.lr_ac_temp_sensor
+          - input_number.aircon_number
    
     # View tab title.
   - title: Example
