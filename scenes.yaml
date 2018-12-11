@@ -72,9 +72,9 @@
       
 - name: Second Floor Morning Open
   entities:
-    cover.fibaro_system_fgrm222_roller_shutter_controller_2_level_2:
+    cover.parentscovergroup:
       position: 50
-    cover.fibaro_system_fgrm222_roller_shutter_controller_2_level_4:
+    cover.kidscovergroup:
       position: 50
 
 - name: Lock First Floor aircon light basement 
