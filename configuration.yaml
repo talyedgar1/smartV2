@@ -91,6 +91,9 @@ input_number:
     max: 30
     step: 1
     
+lovelace:
+  mode: storage
+    
 
 
 
