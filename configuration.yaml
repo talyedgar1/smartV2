@@ -97,6 +97,8 @@ lovelace:
 weather:
   - platform: darksky
     api_key: e2b5eb70a7057bca2afb537bd0b62f28
+    mode: daily
+    lang: he
 
 switch: !include switches.yaml
 group: !include groups.yaml
