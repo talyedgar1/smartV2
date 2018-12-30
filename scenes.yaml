@@ -10,12 +10,6 @@
     cover.parentscovergroup:
       position: 50
 
-- name: Kitchen And Big 50
-  entities:
-    cover.kitchencovergroup:
-      position: 50
-    cover.fibaro_system_fgrm222_roller_shutter_controller_2_level_8:
-      position: 50
 
 - name: First Floor 50
   entities:
@@ -42,26 +36,7 @@
     cover.kidscovergroup:
       position: 0
       
-- name: Shut Basement
-  entities:
-    switch.fibaro_system_fgs223_double_relay_switch_2: off
-    switch.fibaro_system_fgs223_double_relay_switch_3: off
-    
-- name: Movie Time Day
-  entities:
-    cover.livingroomcovergroup:
-      position: 0
-    cover.fibaro_system_fgrm222_roller_shutter_controller_2_level_8:
-      position: 15
-    cover.kitchencovergroup:
-      position: 50
 
-- name: Movie Time Night
-  entities:
-    switch.fibaro_system_fgs223_double_relay_switch_4: off
-    switch.fibaro_system_fgs223_double_relay_switch: off
-    switch.fibaro_system_fgs223_double_relay_switch_3: off
-    switch.fibaro_system_fgs223_double_relay_switch_6: on
     
 - name: Second Floor Sunrise Close
   entities:
