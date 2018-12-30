@@ -93,9 +93,10 @@ input_number:
     
 lovelace:
   mode: storage
-    
 
-
+weather:
+  - platform: darksky
+    api_key: e2b5eb70a7057bca2afb537bd0b62f28
 
 switch: !include switches.yaml
 group: !include groups.yaml
