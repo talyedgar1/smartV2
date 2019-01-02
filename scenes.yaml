@@ -38,7 +38,7 @@
       
 
     
-- name: Second Floor Sunrise Close
+- name: Second Floor night close
   entities:
     cover.parentscovergroup:
       position: 15
