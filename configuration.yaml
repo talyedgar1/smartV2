@@ -101,6 +101,15 @@ weather:
     api_key: e2b5eb70a7057bca2afb537bd0b62f28
 
 influxdb:
+  host: 10.100.102.7
+  port: 8086
+  database: home_assistant
+  username: talyedgar
+  password: yedgAR06072010
+  ssl: true
+  verify_ssl: true
+  max_retries: 3
+  default_measurement: state
    
 
 switch: !include switches.yaml
