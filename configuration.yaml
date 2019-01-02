@@ -100,12 +100,7 @@ weather:
   - platform: darksky
     api_key: e2b5eb70a7057bca2afb537bd0b62f28
 
-influxdb:
-  - host: https://yedgar.duckdns.org
-    port: 8086
-    database: homeassistant
-    username: talyedgar
-    password: yedgAR06072010
+prometheus:
    
 
 switch: !include switches.yaml
