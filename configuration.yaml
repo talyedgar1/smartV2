@@ -100,7 +100,8 @@ weather:
   - platform: darksky
     api_key: e2b5eb70a7057bca2afb537bd0b62f28
 
-prometheus:
+influxdb:
+  host: 127.0.0.1
    
 
 switch: !include switches.yaml
