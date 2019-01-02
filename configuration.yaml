@@ -101,11 +101,11 @@ weather:
     api_key: e2b5eb70a7057bca2afb537bd0b62f28
 
 influxdb:
-  - host: 127.0.0.1
+  - host: https://yedgar.duckdns.org
     port: 8086
-    database: home_assistant
-    username: my_admin_username
-    password: my_admin_password
+    database: homeassistant
+    username: talyedgar
+    password: yedgAR06072010
    
 
 switch: !include switches.yaml
