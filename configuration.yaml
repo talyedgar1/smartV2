@@ -100,16 +100,7 @@ weather:
   - platform: darksky
     api_key: e2b5eb70a7057bca2afb537bd0b62f28
 
-influxdb:
-  host: localhost
-  port: 8086
-  database: home_assistant
-  username: talyedgar
-  password: yedgAR06072010
-  ssl: false
-  verify_ssl: false
-  max_retries: 3
-  default_measurement: state
+prometheus:
    
 
 switch: !include switches.yaml
