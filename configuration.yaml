@@ -101,6 +101,7 @@ weather:
     api_key: e2b5eb70a7057bca2afb537bd0b62f28
 
 prometheus:
+  namespace: homeassistant
    
 
 switch: !include switches.yaml
